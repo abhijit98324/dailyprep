@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.8.0.3 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		h1 { margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h1.western { font-weight: bold; font-size: 18pt; font-family: "Liberation Sans", sans-serif }
+		h1.cjk { font-weight: bold; font-size: 18pt; font-family: "AR PL SungtiL GB" }
+		h1.ctl { font-weight: bold; font-family: "Noto Sans Devanagari"; font-size: 18pt }
+		h2 { margin-top: 0.14in; margin-bottom: 0.08in; background: transparent; page-break-after: avoid }
+		h2.western { font-weight: bold; font-size: 16pt; font-family: "Liberation Sans", sans-serif }
+		h2.cjk { font-weight: bold; font-size: 16pt; font-family: "AR PL SungtiL GB" }
+		h2.ctl { font-weight: bold; font-family: "Noto Sans Devanagari"; font-size: 16pt }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><h1 class="western">
+DailyPrep — Complete Source Code (55 files)</h1>
+<h2 class="western">File Index</h2>
+<ul>
+	<li><p><font face="Liberation Mono, monospace">.env.example</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">README.md</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">index.html</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">metadata.json</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">package.json</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">public/icon.svg</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">scripts/make-admin.mjs</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">server.ts</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">server/store.ts</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/App.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/admin/AdminOverview.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/admin/BulkUpload.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/admin/CurrentAffairsManager.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/admin/ErrorReportsManager.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/admin/ExamManager.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/admin/QuestionForm.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/admin/QuestionList.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/admin/QuizMockBuilder.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/admin/UserSubscriptionManager.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/EmptyState.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/ErrorBanner.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/Footer.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/LoadingSpinner.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/MobileBottomNav.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/Navbar.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/OfflineIndicator.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/PWAInstallButton.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/PaywallModal.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/ProtectedRoute.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/common/ReportErrorModal.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/quiz/QuestionCard.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/components/quiz/QuestionPalette.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/context/AuthContext.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/context/ThemeContext.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/hooks/useOnlineStatus.ts</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/hooks/usePWAInstall.ts</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/index.css</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/lib/api.ts</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/main.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/AdminPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/AuthPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/BookmarksPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/CurrentAffairsPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/DailyQuizPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/DashboardPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/LandingPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/LeaderboardPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/MockTestPlayerPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/MockTestsPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/OnboardingPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/PricingPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/pages/ResultsPage.tsx</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">src/types.ts</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">tsconfig.json</font></p></li>
+	<li><p><font face="Liberation Mono, monospace">vite.config.ts</font></p></li>
+</ul>
+<hr/>
+
+<h2 class="western"><font face="Liberation Mono, monospace">.env.example</font></h2>
+<pre style="margin-bottom: 0.2in; background: #e1e1e1"># GEMINI_API_KEY: Required for Gemini AI API calls.<br/>
+# AI Studio automatically injects this at runtime from user secrets.<br/>
+# Users configure this via the Secrets panel in the AI Studio UI.<br/>
+GEMINI_API_KEY=&quot;MY_GEMINI_API_KEY&quot;<br/>
+<br/>
+# APP_URL: The URL where this applet is hosted.<br/>
+# AI Studio automatically injects this at runtime with the Cloud Run service URL.<br/>
+APP_URL=&quot;MY_APP_URL&quot;<br/>
+<br/>
+# SESSION_SECRET: Secret key used to sign authentication session tokens.<br/>
+SESSION_SECRET=&quot;change-me-in-production&quot;<br/>
+<br/>
+# ADMIN_EMAIL: Email address automatically granted admin role on registration.<br/>
+ADMIN_EMAIL=&quot;admin@dailyprep.in&quot;<br/>
+<br/>
+# UPI_ID &amp; UPI_PAYEE_NAME: Direct UPI details for ₹200/month subscriptions.<br/>
+UPI_ID=&quot;dailyprep@upi&quot;<br/>
+UPI_PAYEE_NAME=&quot;DailyPrep&quot;<br/>
+<br/>
+# Optional Email Delivery (Resend) for Forgot Password reset codes in production.<br/>
+RESEND_API_KEY=&quot;&quot;<br/>
+RESEND_FROM_EMAIL=&quot;&quot;</pre><h2 class="western">
+<font face="Liberation Mono, monospace">README.md</font></h2>
+<pre style="margin-bottom: 0.2in; background: #e1e1e1"># DailyPrep — Govt Exam Daily Quiz &amp; Mock Test Platform<br/>
+<br/>
+DailyPrep is a mobile-first web application and installable PWA for Indian government job exam aspirants (**SSC, Banking, Railways, UPSC &amp; State PSCs, Defence, Teaching, and State Police**).<br/>
+<br/>
+All questions, explanations, quizzes, mock tests, and daily current affairs digests are **100% manually curated by the admin**—there is zero AI, LLM, or automated question generation.<br/>
+<br/>
+---<br/>
+<br/>
+## Folder Structure<br/>
+<br/>
